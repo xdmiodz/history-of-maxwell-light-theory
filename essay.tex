@@ -32,6 +32,14 @@
 \section*{Теория Максвелла}
 Впервые, уравнения Максвелла, связывающие воедино, в математической форме, всё известное на том момент об электромагнетизме, появляются в работе 1864 г. ``Динамическая теория электромагнитного поля''. В этой работе Максвелл представляет 20 уравнений, содержащих 20 неизвестных.  В своих уравнениях Максвелл суммирует труда Эрстеда (1777-1851), Карла Гаусса (1777-1855), Ампера (1775-1836), Фарадея (1791-1867) и других, а так же добавляет фундаментальное понятие ``тока смещения''.
 
+Для дальнейшего изложения полезно будет рассмотреть  уравнения Максвелла, в том виде, в котором он изложил их в своей работе. В таблице [~\ref{tab:maxwell_vars}]  
+\begin{align}
+&\mathbf{J_T}=\mathbf{J}+\frac{\partial{\mathbf{D}}}{\partial{t}}\\
+&\mu\mathbf{H} = \mathbf{B} = \nabla\times\mathbf{A}\\
+&\nabla\times\mathbf{H}=4\pi\mathbf{J_T}=4\pi\left[\mathbf{J}+\frac{\partial{\mathbf{D}}}{\partial{t}}\right]\\
+&\mathbf{E}=\boldsymbol\nu\times\mathbf{B} - \frac{\partial{\mathbf{D}}}{\partial{t}} - \nabla\psi
+\end{align}
+\begin{table}[p]
 \begin{tabular}{>{\raggedright}m{4cm}>{\centering}m{3.5cm}>{\centering}m{3.5cm}}
 \toprule
 Название физической величины & Обозначения Максвелла & Современная нотация\tabularnewline
@@ -57,11 +65,14 @@ r^\mathrm{l}=r+\frac{\mathrm{d}h}{\mathrm{d}t}
 \]
 & $\mathbf{J_T}$\tabularnewline
 \tabularnewline
-Плотность электрического заряда & $e$ & $\rho$\tabularnewline
+Плотность свободного заряда & $e$ & $\rho$\tabularnewline
 \tabularnewline
 Электрический потенциал & $\psi$ & $\psi$\tabularnewline
 \bottomrule
 \end{tabular}
+\caption{Оригинальные обозначения, использованные Максвеллом в своих уравнениях}
+\label{tab:maxwell_vars}
+\end{table}
 
 Максвелл вывел свои уравнения для компонент вектора
 \section*{Технический прогресс и теория Максвелла}
